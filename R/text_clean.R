@@ -143,7 +143,7 @@ text.toASCII = function(
       x)
   }
   if (useIConv) {
-    x = iconv(gsub("’|´", "", x), to='ASCII//TRANSLIT')
+    x = iconv(x, to='ASCII//TRANSLIT')
   }
 
   return(x)
